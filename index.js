@@ -32,7 +32,7 @@ switch (day) {
 
 let abr = (hour >= 12)? " PM ":" AM ";
 
-console.log('Current time is : ' + hour + ' ' + abr + ' : ' + minute + ' : ' + seconds);
+document.getElementById("time").innerHTML =('Current time is : ' + hour + ' ' + abr + ' : ' + minute + ' : ' + seconds);
 
 //----------------------------------------------------------
 
@@ -40,3 +40,13 @@ const print_page = () =>
 {
   window.print();
 }
+
+
+//-----------------------------------------------------------
+
+let  dayOfMonth = currentDay.getDate();
+let month = currentDay.getMonth();
+let year = currentDay.getFullYear();
+
+
+document.getElementById("date").innerHTML = ('Current date : ' + dayOfMonth + '/'  + month + '/' + year);
