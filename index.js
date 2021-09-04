@@ -33,3 +33,10 @@ switch (day) {
 let abr = (hour >= 12)? " PM ":" AM ";
 
 console.log('Current time is : ' + hour + ' ' + abr + ' : ' + minute + ' : ' + seconds);
+
+//----------------------------------------------------------
+
+const print_page = () =>
+{
+  window.print();
+}
