@@ -50,3 +50,13 @@ let year = currentDay.getFullYear();
 
 
 document.getElementById("date").innerHTML = ('Current date : ' + dayOfMonth + '/'  + month + '/' + year);
+
+//---------------------------------------
+let a = 5;
+let b = 6;
+let c = 7;
+
+let s = (a + b + c)/2;
+
+let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+document.getElementById("triangle_area").innerHTML = area;
