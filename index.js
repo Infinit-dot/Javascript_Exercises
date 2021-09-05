@@ -8,25 +8,25 @@ let seconds = currentDay.getSeconds();
 
 switch (day) {
   case 0:
-    console.log('Today is : Sunday');
+    document.getElementById("day").innerHTML = ('Today is : Sunday');
     break;
   case 1:
-   console.log('Today is : Monday');
+    document.getElementById("day").innerHTML =('Today is : Monday');
    break;
   case 2:
-    console.log('Today is : Tuesday');
+    document.getElementById("day").innerHTML =('Today is : Tuesday');
     break;
   case 3:
-    console.log('Today is : Wednesday');
+    document.getElementById("day").innerHTML =('Today is : Wednesday');
     break;
   case 4:
-    console.log('Today is : Wednesday');
+    document.getElementById("day").innerHTML =('Today is : Wednesday');
     break;
   case 5:
-    console.log('Today is : Thursday');
+    document.getElementById("day").innerHTML =('Today is : Thursday');
     break;
   case 5:
-    console.log('Today is : Saturday');
+    document.getElementById("day").innerHTML =('Today is : Saturday');
     break;
 }
 
@@ -60,3 +60,12 @@ let s = (a + b + c)/2;
 
 let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
 document.getElementById("triangle_area").innerHTML = area;
+
+//--------------------------------------------------
+
+
+let text = "w3resource";
+setInterval(()=>{
+text = text[text.length - 1] + text.substring(0,text.length - 1);
+document.querySelector(".animation").innerText = text;
+},300)
